@@ -17,7 +17,18 @@
 }
 
 @layer base {
+  * {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
   body {
     @apply bg-gray-200;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 110%;
+    }
   }
 }
